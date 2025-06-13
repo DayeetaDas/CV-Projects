@@ -1,0 +1,88 @@
+📚 School Library Management System
+This is a simple console-based Library Management System built in C++. It allows basic CRUD (Create, Read, Update, Delete) operations for managing student library accounts. The data is stored using binary file handling.
+
+🛠 Features
+Add a new account
+
+View all existing accounts
+
+Search for an account by account number
+
+Edit details of an existing account
+
+Delete an account
+
+Persistent storage via details.txt file
+
+🗂 Structure
+Each Library Account contains:
+
+Account number (string)
+
+Name (char array)
+
+Book name (char array)
+
+Status (char array)
+
+🧾 Usage
+🧵 Menu Options
+Once you run the program, the following menu is displayed:
+
+pgsql
+Copy
+Edit
+Press 0 to exit
+Press 1 to add new account
+Press 2 to display all accounts
+Press 3 to search for an account
+Press 4 to edit an existing account
+Press 5 to delete an existing account
+📥 Input Format
+When prompted:
+
+Enter strings for account number, name, book name, and status (e.g., issued, available, etc.)
+
+💾 File Handling
+Data is stored in a binary file called details.txt.
+
+A temporary file temp.txt is used while deleting an account.
+
+Data is read and written using C++'s fstream.
+
+🧪 Example
+yaml
+Copy
+Edit
+Enter the account number: 1001
+Enter the name: Alice
+Enter the book's name: DataStructures
+Enter the status: issued
+⚠️ Limitations
+Uses C-style character arrays (char[]) instead of modern std::string for names and status.
+
+No input validation or error handling for file operations.
+
+Assumes fixed input sizes and uses unsafe casting (char*)&object.
+
+📌 How to Compile and Run
+Use any C++ compiler like g++:
+
+bash
+Copy
+Edit
+g++ -o library_system library_system.cpp
+./library_system
+📘 Future Improvements
+Switch to using std::string for all textual data.
+
+Add user authentication for admin access.
+
+Improve file I/O safety and adopt modern C++ practices.
+
+Implement due date and fine calculations.
+
+GUI version using frameworks like Qt or CLI frameworks like ncurses.
+
+📄 License
+This project is provided for educational purposes and is not licensed for production use.
