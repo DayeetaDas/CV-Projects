@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        div {
+            height: 700px;
+        }
+        h3 {
+            text-align: center;
+        }
+               
+            .flex-center {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+            }
+            .flex-center p {
+              margin: 0;
+              padding: 20px;
+            }
+    </style>
+</head>
+<body>
+    <ul class="nav nav-pills nav-justified mt-1">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Medications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Collections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    {% block content %}
+    {% endblock %}
+    <div class="container-flex mt-3" style="margin: 100px;">
+        <div class="row">
+          <div class="col-sm mr-3" style="background-color: rgba(61, 207, 151, 0.2);">
+            <section>
+              <h3> Patient Details </h3>
+              <h5> Patient Name: </h5>
+              <h5> NHS Number: </h5>
+              <h5> Date of Birth: </h5>
+            </section>
+            <section style="margin-top: 100px;">
+              <h3> GP Details </h3>
+              <h5> Address: </h5>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <h5> Telephone Number: </h5>
+              <h5> GP Name:  </h5>
+            </section>
+          </div>
+          <div class="col-sm mr-3" style="background-color: rgba(61, 207, 151, 0.1); text-align: center; line-height: 700px">
+            <p> Recent Prescriptions... </p>
+          </div>
+          <div class="col-sm mr" style="background-color: rgba(61, 207, 151, 0.2);  text-align: center;">
+            <div class = "flex-center">
+            <p> Get information on Corona Virus at www.nhs.uk/conditions/coronavirus-covid-19/ </p>
+            <p> Please wear a face mask when coming to the pharmacy </p>
+            <p> Visit the 111 website for help regarding Corona Virus queries at 111.nhs.uk/covid-19 </p>            
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
