@@ -1,0 +1,344 @@
+/*The styling for the body is mentioned here which applies to all the webpages*/
+body
+{
+    font: 15px/1.5 "Times New Roman";
+    padding: 0;
+    margin: 0;
+   background-color: LightSlateGrey;
+}
+/*The styles for the division container is done here*/
+.container
+{
+    width:80%;
+    margin: auto;
+    overflow:hidden;
+}
+/*The margin and padding of the list has been made null*/
+ul
+{
+    margin:0;
+    padding: 0;
+}
+/*The format for the subscribe button is mentioned here*/
+.button_1
+{
+    height:38px;
+    background:aqua;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:black; 
+}
+/*The format for the header is mentioned which will remain same for all the pages*/
+header
+{
+    background: dimgrey;
+    color:white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: aqua 1px solid;
+}
+/*Format specific to the links in the header is mentioned*/
+header a 
+{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*Format specific to the unordered list elements in the header is mentioned*/
+
+header li
+{
+    display:inline-block;
+    padding:0 20px 0 20px;
+}
+/* The styles to be used in the branding section(Name of the website) is mentioned*/
+header #branding
+{
+    text-align:center;
+    font-family: "Times New Roman";
+}
+/*Format specific to the heading in the branding section is mentioned*/
+
+header #branding h1
+{
+    margin: 0;
+    font-family: "Georgia";
+    letter-spacing: 7.6px;
+}
+header nav
+{
+    float: right;
+    margin-top: 10px;
+}
+/*Format specific to the active page is mentioned*/
+header .current a
+{
+  color:white;
+  background-color: aqua;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+/*If the mouse pointer is moved on any other list elements other than the active page, the given style will be added to it*/
+header a:hover
+{
+    background-color: aqua;
+    color:white;
+}
+/*Format specific to the showcase is mentioned*/
+#showcase
+{
+    min-height: 400px;
+    text-align: center;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(corona.jpg);
+    font-family: "Courier New";
+    letter-spacing: 7.6px;
+    font-size: 15px;
+}
+/*Format specific to the paragraph in the showcase section is mentioned*/
+#showcase p
+{
+    font-size: 20px;
+    font-family:"Georgia";
+    letter-spacing:0px;
+}
+#showcase a
+{
+    font-size:20px;
+    font-family:"Georgia";
+    letter-spacing:0px;
+}
+/*Format specific to the newsletter section is mentioned*/
+#newsletter
+{
+    padding:15px;
+    color: white;
+    background:dimgrey;
+}
+/*Format specific to the heading of the newsletter section is mentioned*/
+#newsletter h1
+{
+    float:left;
+    font-family: "Times New Roman";
+}
+/*Format specific to the form of the newsletter section is mentioned*/
+#newsletter form
+{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]
+{
+    padding: 4px;
+    height:25px;
+    width:250px;
+}
+/*Format specific to the boxes section in the footer is mentioned*/
+#boxes
+{
+    margin-top: 20px;
+}
+/*Format specific to the box division of the boxes section is mentioned*/
+#boxes .box
+{
+   float:left;
+   width:30%;
+   padding: 10px;
+   text-align: center;
+}
+/*Format specific to the image of the box division in the boxes section is mentioned*/
+#boxes .box img
+{
+    width:90px;
+}
+/*Format specific to the sidebar of the aside section is mentioned.This will be displayed on four pages*/
+aside#sidebar
+{
+    float:right;
+    width:30%;
+    margin-top:10px;
+    background-color: aqua;
+    padding-left: 40px;
+    padding top:20px;
+    padding bottom:20px;
+    line-height: 40px;
+    font-family: "Courier New";
+}
+/*Format specific to the image of the sidebar section is mentioned*/
+ #sidebar img
+{
+    height:120%;
+    width:90%;
+    display:block;
+}
+/*Format specific to the link of the sidebar section is mentioned*/
+#sidebar a
+{
+    color:black;
+    font-family: "Courier New";
+}
+/*Format specific to the main column article is mentioned*/
+article #main-col
+{
+    float:left;
+    width:65%;
+}
+/*Format specific to the heading of the main-col section is mentioned*/
+#main-col h1
+{
+    font-size: 20px;
+    color:aqua;
+}
+/*Format specific to the link of the main-col section is mentioned*/
+#main-col a
+{
+    color:aqua;
+}
+/*Format specific to the images of the thumbnail section is mentioned*/
+article#thumbnails 
+{
+    width:65%;
+    float:left;
+}
+
+/*Format specific to the links of the thumbnail section is mentioned*/
+
+#thumbnails a
+{
+    color:aqua;
+}
+/*Format specific to the remarks of the article is mentioned*/
+article#remarks
+{
+    font-size:15px;
+    float:left;
+    width:65%;
+}
+/*Format specific to the heading of the remarks is mentioned*/
+#remarks h1
+{
+    color:aqua;
+    font-size: 20px;
+}
+/*Format specific to the heading of the about is mentioned*/
+#about h1
+{
+    color:aqua;
+    font-size: 20px;
+}
+/*Format specific to the paragraph of the about is mentioned*/
+article#about 
+{
+    width:65%;
+    float:left;
+}
+/*Format specific to the knowme section of an article is mentioned*/
+article#knowme
+{
+    font-size:15px;
+    float:left;
+    width:65%;
+}
+/*Format specific to the heading of the knowme section is mentioned*/
+#knowme h1
+{
+    font-size: 20px;
+    color: aqua;
+}
+/*Format specific to the paragraph of the knowme section is mentioned*/
+#knowme p
+{
+    font-size: 20px;
+}
+/*Format specific to the image of the knowme section is mentioned*/
+#knowme img
+{
+    width:450px;
+    height:500px;
+}
+/*Format of the footer is mentioned which will be same for all the web pages*/
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color:aqua;
+    background-color: dimgrey;
+    text-align: center;
+
+}
+/* Media queries are added to make the website responsive no separate displays are mentioned for different devices*/
+/*Changes are made so that the content is clearly visible and easily readable in all the different devices8*/
+@media(max-width:1080px){
+    header#branding, header nav,
+    header nav li, #newsletter h1,
+    #newsletter form, #boxes .box,
+    article #main-col{
+        float:none;
+        text-align: center;
+        width:100%;
+        display:block;
+        padding:0;
+        margin:0;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top:40px;
+    }
+    #newsletter button{
+        display:block;
+        width:100%;
+    }
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    article#thumbnails
+    {
+        display:block;
+        width:100%;
+    }
+    #thumbnails img
+    {
+        width:100%;
+    }
+    #thumbnails embed
+    {
+        width:100%;
+        display:block;
+    }
+
+     aside#sidebar
+    
+
+    {
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+    article#remarks 
+    {
+        display:block;
+        width:100%;
+    }
+   
+    article#about 
+    {
+        display:block;
+        width:100%;
+    }
+    
+    article#knowme 
+    {
+        display:block;
+        width:100%;
+    }
+    #knowme img
+    {
+        display:block;
+        width:100%;
+    }
+
+}
