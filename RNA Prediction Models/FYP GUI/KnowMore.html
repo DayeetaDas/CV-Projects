@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- The language of the file is set to English-->
+<html lang="en">
+<head>
+	<!-- All the meta charsets are defined-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="acceler8, jobshop, ntsu, cpd">
+	<meta name="author" content="Dayeeta Das">
+	<!-- The title of the webpage is defined-->
+	<title>mRNA predictive models|KnowMore</title>
+	<!-- The page gets linked to the external style shee1-->
+	<link href="static/style.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<!-- The header will remain same like the home page-->
+	<header>
+	  <div class="container">
+	  	<section id="branding">
+	  		<h1>mRNA predictive models</h1>
+	  		<nav>
+	  			<ul>
+	  				<!-- The current link has been changed from welcome to KnowMore-->
+	  				<li><a href="welcome.html">Home</a></li>
+	  				<li class="current"><a href="KnowMore.html">KnowMore</a></li>
+                    				<li><a href="Models.html">Models</a></li>
+	  				<li><a href="Play.html">Play</a></li>
+	  			</ul>
+	  		</nav>
+	  	</section>
+	  </div>	
+    </header>
+    
+    <section id="main">
+    	<div class="container">
+    	<!-- In the article section a link to the Employability online has been provided."-->
+	 <aside id="sidebar">
+                <!-- A side bar is created using aside to display information related to the activities.-->
+                <p>Some valuable links has been provided in this ection regarding the Eterna dataset on which this predictions has been carried out. Find out more about what the reasearchers in Stanford has to say about the mRNA vaccines. Also check out the recent statistcs and updates on Coronavirus cases worldwide.</p>
+                <!-- All the images used in this section has been taken from google-->
+                <img src="https://drive.google.com/uc?export=view&id=1hnU0mtkuiDqv1Px5ujGKuPkAUrHGZDfl" alt="kaggle logo">
+                <a href="https://www.pbs.org/wgbh/nova/video/rna-coronavirus-vaccine/">Click to know more about mRNA vaccines</a>
+                <br>
+                <img src="https://drive.google.com/uc?export=view&id=1hiJz0NvyIrPzxBQPQ9lSD4lWFXtzuoIP" alt="mRNA vaccine">
+                <a href="https://medium.com/eternaproject/how-to-build-a-better-vaccine-from-the-comfort-of-your-own-web-browser-233343e0210d">Click to know how you can build a vaccine from the comfort of your web browser</a>
+                <br>
+                <img src="https://drive.google.com/uc?export=view&id=1VHBtOnocbEVaPn4xmpsR4IkAkzYRXuRw" alt="WHO statistics">
+                <a href="https://www.who.int/india/emergencies/coronavirus-disease-(covid-19)">
+                Click to know more about Coronovarius</a>
+                <br>
+            </aside>
+	 <article id="main-col">
+                <h1 class="page title">Know More About the Project</h1>
+	   <hr>
+	   <br>
+	   <p style="font-size:20px"> COVID-19 has caused havoc in the world and it has become a necessity to dveelop a vaccine that can combat this disease effectively and act fast at the same time. Researchers have found out that mRNA vaccines can beecome the potential healing agent for this purpose. However, there's a catch! The mRNA sequences degrade rapidly. Hence, it is necessary to develop rules and design models to predict the likely degradation rates of the mRNA sequences.This project is concerned with the prediction of the degradation rates of mRNA sequences using various ML and DL models.</p>
+	 <br>
+	 <embed src="https://drive.google.com/uc?export=view&id=1_c0i_LlVCErfYnWMw1-IsUOyT_osc94v" style="width:600px;height:400px;">
+	 <p style="color:aqua"> The above image shows the structure of coronavirus (Encyclopedia Britannica, n.d.). </p>
+	 <br>
+	 <embed src="https://drive.google.com/uc?report=view&id=1_XH40ScdOpTixnMvFj0fX5syGJR-QVI_" style="width:600px;height:300px;">
+	 <p style="color:aqua"> The above image shows the structure of RNA (www.brooklyn.cuny.edu, n.d.).</p>
+	 <br>
+	 <embed src="https://drive.google.com/uc?export=view&id=129OCJHe5rfRfYU_olVvz80hbNkEhAN9f" style="width:400px;height:130px;">
+	 <p style="color:aqua"> The above image shows the coded structure of RNA.</p>
+	 <br>
+	 <embed src="https://drive.google.com/uc?export=view&id=1_L_t5IGFCaWY576zEk1cSYXJcMbWEQ5M" style="width:400px;height:720px;">
+	 <p style="color:aqua"> The above image depicts how the RNA vaccine affects coronavirus.</p>
+	 <br>
+	 <h1 class="page title">Know More About the Dataset</h1>
+	 <hr>
+	 <br>
+	 <p style="font-size:20px"> Stanford scientists collected data of 3029 RNA sequences of length 107. However, experimental data on 5 conditions(target values) were presented for the first 68 bases. This collected data was further split into 2400 and 629 sequences and put into the train and test datasets respectively. More information on the dataset has been provided below. </p>
+	 <br>
+	 <h1 class="page title"> The description of different columns in the dataset has been provided here:</h1>
+	 <p style="font-size:20px">id - An arbitrary identifier for each sample.</p>
+	 <p style="font-size:20px">seq_scored - (68 in Train and Public Test, 91 in Private Test) Integer value denoting the number of positions used in scoring with predicted values. This should match the length of reactivity, deg_* and *_error_* columns. Note that molecules used for the Private Test will be longer than those in the Train and Public Test data, so the size of this vector will be different.</p>
+	 <p style="font-size:20px">seq_length - (107 in Train and Public Test, 130 in Private Test) Integer values, denotes the length of sequence. Note that molecules used for the Private Test will be longer than those in the Train and Public Test data, so the size of this vector will be different.</p>
+	 <p style="font-size:20px">sequence - (1x107 string in Train and Public Test, 130 in Private Test) Describes the RNA sequence, a combination of A, G, U, and C for each sample. Should be 107 characters long, and the first 68 bases should correspond to the 68 positions specified in seq_scored (note: indexed starting at 0).</p>
+	 <p style="font-size:20px">structure - (1x107 string in Train and Public Test, 130 in Private Test) An array of (, ), and . characters that describe whether a base is estimated to be paired or unpaired. Paired bases are denoted by opening and closing parentheses e.g. (....) means that base 0 is paired to base 5, and bases 1-4 are unpaired.</p>
+	 <p style="font-size:20px">reactivity - (1x68 vector in Train and Public Test, 1x91 in Private Test) An array of floating point numbers, should have the same length as seq_scored. These numbers are reactivity values for the first 68 bases as denoted in sequence, and used to determine the likely secondary structure of the RNA sample.</p>
+	 <p style="font-size:20px">deg_pH10 - (1x68 vector in Train and Public Test, 1x91 in Private Test) An array of floating point numbers, should have the same length as seq_scored. These numbers are reactivity values for the first 68 bases as denoted in sequence, and used to determine the likelihood of degradation at the base/linkage after incubating without magnesium at high pH (pH 10).</p>
+	 <p style="font-size:20px">deg_Mg_pH10 - (1x68 vector in Train and Public Test, 1x91 in Private Test) An array of floating point numbers, should have the same length as seq_scored. These numbers are reactivity values for the first 68 bases as denoted in sequence, and used to determine the likelihood of degradation at the base/linkage after incubating with magnesium in high pH (pH 10).</p>
+	 <p style="font-size:20px">deg_50C - (1x68 vector in Train and Public Test, 1x91 in Private Test) An array of floating point numbers, should have the same length as seq_scored. These numbers are reactivity values for the first 68 bases as denoted in sequence, and used to determine the likelihood of degradation at the base/linkage after incubating without magnesium at high temperature (50 degrees Celsius).</p>
+	 <p style="font-size:20px">deg_Mg_50C - (1x68 vector in Train and Public Test, 1x91 in Private Test) An array of floating point numbers, should have the same length as seq_scored. These numbers are reactivity values for the first 68 bases as denoted in sequence, and used to determine the likelihood of degradation at the base/linkage after incubating with magnesium at high temperature (50 degrees Celsius).</p>
+	 <p style="font-size:20px">*_error_* - An array of floating point numbers, should have the same length as the corresponding reactivity or deg_* columns, calculated errors in experimental values obtained in reactivity and deg_* columns.</p>
+	 <p style="font-size:20px">predicted_loop_type - (1x107 string) Describes the structural context (also referred to as 'loop type')of each character in sequence. Loop types assigned by bpRNA from Vienna RNAfold 2 structure. From the bpRNA_documentation: S: paired "Stem" M: Multiloop I: Internal loop B: Bulge H: Hairpin loop E: dangling End X: eXternal loop.</p>
+	 <p style="font-size:20px">S/N filter Indicates if the sample passed filters (kaggle.com, n.d.).</p>
+	 <br>
+	 <h1 class="page title">References</h1>
+	 <hr>
+	 <p style="font-size:20px">Encyclopedia Britannica. (n.d.). SARS-CoV-2 | virus. [online] Available at: https://www.britannica.com/science/2019-nCov.</p>
+	 <p style="font-size:20px">www.brooklyn.cuny.edu. (n.d.). Transcription and Translation. [online] Available at: http://www.brooklyn.cuny.edu/bc/ahp/BioInfo/TT/Tlatm.html [Accessed 16 Apr. 2021].</p>
+	 <p style="font-size:20px">kaggle.com. (n.d.). OpenVaccine: COVID-19 mRNA Vaccine Degradation Prediction. [online] Available at: https://www.kaggle.com/c/stanford-covid-vaccine/data.</p>
+	 <br>
+	 <a href="Models.html" style="font-size:20px">Click this link to check out the predictions carried out using different ML and DL models on the above dataset.</a>
+            </article>
+    	</div>
+    </section>
+    <footer>
+    	<p>mRNA predictive models,Copyright &copy; 2021</p>
+    </footer>
+
+</body>
+</html>

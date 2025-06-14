@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- The language of the file is set to English-->
+<html lang="en">
+<head>
+	<!-- All the meta charsets are defined-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="acceler8, jobshop, ntsu, cpd">
+	<meta name="author" content="Dayeeta Das">
+	<!-- The title of the webpage is defined-->
+	<title>mRNA predictive models|Models</title>
+	<!-- The page gets linked to the external style shee1-->
+	<link href="static/style.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<!-- The header will remain same like the home page-->
+	<header>
+	  <div class="container">
+	  	<section id="branding">
+	  		<h1>mRNA predictive models</h1>
+	  		<nav>
+	  			<ul>
+	  				<!-- The current link has been changed from welcome to KnowMore-->
+	  				<li><a href="welcome.html">Home</a></li>
+	  				<li><a href="KnowMore.html">KnowMore</a></li>
+                    				<li class="current"><a href="Models.html">Models</a></li>
+	  				<li><a href="Play.html">Play</a></li>
+	  			</ul>
+	  		</nav>
+	  	</section>
+	  </div>	
+    </header>
+    
+    <section id="main">
+    	<div class="container">
+    	<!-- In the article section a link to the Employability online has been provided."-->
+	 <article id="main-col">
+	 <h1 class="page title">Explore the different predictive models</h1>
+	 <hr>
+	 <h1>Data Visualization</h1>
+	 <br>
+	 <embed src="https://drive.google.com/uc?export=view&id=1W1QxYe0ZllEvtwS_8qvYUPjRP8K5oqfG" style="width:1060px;height:477px">
+	 <p style="color:aqua">Histograms have been used to show the distribution of the different columns in the dataframe (above).</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=121SojacUJinWPT0IEM5Sa9v5jISQnowK" style="width:994px;height:388px">
+	 <p style="color:aqua">The Base Pair Probability Matrices(BPPS) for the first 10 RNA sequences has been loaded and displayed (above).</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1IJkmZYC9loIw1CiK_PL44pP82IIsTCuv" style="width:688px;height:404px">
+	 <p style="color:aqua">Frequency distribution of the mean values of the target columns(reactivity, deg_Mg_pH10, deg_Mg_50C, deg_pH10 and deg_50C) has been shown (above).</p>
+ 	 <embed src="https://drive.google.com/uc?export=view&id=1rEQTbczeIHIt5h7GN4_GmVSI-0cVOB1h" style="width:813px;height:1543px">
+	 <p style="color:aqua">The distribution of the 5 target columns without their distribution error has been visualized above (above).</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=18xmvkq7lEOQ2sz6WOl30ZGOXfh2CEKBt" style="width:931px;height:855px">
+	 <p style="color:aqua">Pairplots has been used to visualize the relationship among the mean values of the 5 target columns of the training set (above).</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1VOKkPbR2Qoguuyaj9c__JJQ2-RLZkMqn" style="width:1050px;height:213px">
+	 <p style="color:aqua">The distribution of the SN filter has been shown using kdeplot and bar plots (above).</p>
+	 <br>
+	 <p style="color:aqua">Regplots has been used to show the distribution of the first 25 samples of the 5 target columns from the training set (above).</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=17NB03-zt8kb9Sse4Lg4ha3qzie0aoV32" style="width:891px;height:754px">
+	 <embed src="https://drive.google.com/uc?export=view&id=1o_wZ7clMVO4edinuPUK6Pi91bFeq_BvK" style="width:896px;height:740px">
+	 <embed src="https://drive.google.com/uc?export=view&id=1OGjdmnheW-zlJMTQgSKM0TrBHIw9zTO7" style="width:896px;height:761px">
+	 	
+	 <hr>
+	 <h1>Train and Test Dataset</h1>
+	 <embed src="https://drive.google.com/uc?export=view&id=11AVBIFLQPF7Dz5HEb3Ufq8cuG60tXFpC" style="width:1159px;height:144px">
+	 <p style="color:aqua">The above picture shows the first 5 sample records from the training dataset.</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1cFBamkIrYSvYcXkJ8LE8oFbUeD_Utdkn" style="width:359px;height:148px">
+	 <p style="color:aqua">The above picture shows the first 5 sample records from the test dataset.</p>
+
+	 <hr>
+	 <h1>LightGBM Regressor</h1>
+	 <p style="font-size:20px">Accuracy of training model</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1vCfMoaAOCqxcwBsjanuPcYgsQ__gIwlH" style="width:442px;height:271px">
+	 <p style="color:aqua">The accuarcy score at the ending of training the model using LightGBM Regressor has been shown above.</p>
+
+	 <p style="font-size:20px">Prediction Result</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1liskmPTDocXaiExZsw4YDxokTMjn53Iq" style="width:562px;height:262px">
+	 <p style="color:aqua">The picture above shows the predcition results. If we compare with the training data provided above, we can see that the predicted values are pretty close to that of the training data.</p>
+
+	 <hr>
+	 <h1>WaveNet + GRU</h1>
+	 <p style="font-size:20px">Accuracy of training model</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1welzbghM-WQF5SGlFTazBT-AM94Mujgi" style="width:932px;height:441px">
+	 <p style="color:aqua">The Root Mean Sqaured Error(RMSE) at the end of 65 epocks for 2 folds each has been shown above.</p>
+	 
+	 <p style="font-size:20px">Prediction Result</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1OhzpqqOU6QRj3iH2wDqMqQlip4ZLChq3" style="width:593px;height:189px">
+	 <p style="color:aqua">The picture above shows the predcition results. If we compare with the training data provided above, we can see that the predicted values are higher than that of the training dataset. This is beacuse the SN filter has not been applied in this case.</p>
+	 
+	 <hr>
+	 <h1>GRU + LSTM</h1>
+	 <p style="font-size:20px">Data Visualization</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1kM7mphMqDjkuiKYHCMORb02HGWyz1ay8" style="width:757px;height:498px">
+	 <p style="color:aqua">The distribution of the bpps sum, max and mean values from 200 random samples taken from the training set has been visualized using kdeplot.</p>
+	 <p style="font-size:20px">Accuracy of training model</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1KsfOcJmnr4UG5sYbtle6zMcaA3dSfGEy" style="width:646px;height:477px">
+	 <embed src="https://drive.google.com/uc?export=view&id=1I6dIX2aWwaQ8HUo1NhQr_cF5QpqARw43" style="width:672px;height:471px">
+	 <p style="color:aqua">The validation score at the end of training of GRU and LSTM rnn models has been shown above.</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1wzUzJMqXp0h0lhWnogeat_K6PszmmenD" style="width:844px;height:433px">
+	 <p style="color:aqua">Graphs has been used to show the variation between the training loss and the validation loss from the GRU and the LSTM layers.</p>
+	 <p style="font-size:20px">Prediction Result</p>
+	 <embed src="https://drive.google.com/uc?export=view&id=1ONui5949x4C1WY85c_hI5hUnVJACbSvW" style="width:380px;height:502px">
+	 <p style="color:aqua">It can be observed from the predictions above that the predicted values of the GRU and the LSTM models are slightly higher when the SN filter is not applied but when the SN filter is made equal to 1, the values predicted becomes almost equal to the values in the training dataset.</p>
+            </article>
+    	</div>
+    </section>
+    <footer>
+    	<p>mRNA predictive models,Copyright &copy; 2021</p>
+    </footer>
+
+</body>
+</html>
